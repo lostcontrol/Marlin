@@ -2588,7 +2588,7 @@ bool Planner::buffer_segment(const float &a, const float &b, const float &c
     }
   }
 
-  /* <-- add a slash to enable
+  //* <-- add a slash to enable
     SERIAL_ECHOPAIR("  buffer_segment FR:", fr_mm_s);
     #if IS_KINEMATIC
       SERIAL_ECHOPAIR(" A:", a);
@@ -2619,7 +2619,7 @@ bool Planner::buffer_segment(const float &a, const float &b, const float &c
     SERIAL_ECHOPAIR(" (", position[E_AXIS]);
     SERIAL_ECHOPAIR("->", target[E_AXIS]);
     SERIAL_ECHOLNPGM(")");
-  //*/
+  //
 
   // Queue the movement
   if (
